@@ -1,0 +1,173 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = mytheme
+build_property.RootNamespace = mytheme
+build_property.ProjectDir = C:\Users\asp\Desktop\mytheme\mytheme\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\asp\Desktop\mytheme\mytheme
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/addpro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRkcHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/Createcateg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlY2F0ZWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/CreateStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/Deletecateg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlY2F0ZWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/Deletepro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlcHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/DeleteStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/EditCateg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/EditStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFN0dWRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/proupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHJvdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/showcateg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cc2hvd2NhdGVnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Admin/uploads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXBsb2Fkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Client/Contactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENvbnRhY3R1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Client/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XHByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Client/showproducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XHNob3dwcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Cookies/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Cookies/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Cookies/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Cookies/regEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xyZWdFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Cookies/registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29va2llc1xyZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Shared/_nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/uSER/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdVNFUlxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/uSER/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdVNFUlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asp/Desktop/mytheme/mytheme/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5odzloc0hs

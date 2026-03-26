@@ -1,0 +1,67 @@
+﻿@model IEnumerable<mytheme.Models.Product>
+
+@{
+    ViewData["Title"] = "product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>product</h1>
+
+<p>
+    <a asp-action="addpro">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Namee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cat)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Namee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+           <img src="@Url.Content(item.Picture)" width="200px" height="150px" />
+             
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cat.Namee)
+            </td>
+            <td>
+                    <a asp-action="proupdate" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Deletepro" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

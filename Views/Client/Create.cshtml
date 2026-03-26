@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Customize Card";
+    var template = ViewBag.Template;
+}
+@{
+
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Customize Your E-Card</h2>
+
+<form asp-action="Create" asp-controller="Client" method="post" enctype="multipart/form-data" onsubmit="return generateFinalImage()">
+    <input type="hidden" name="templateId" value="@template.Id" />
+    <input type="hidden" name="finalImageData" id="finalImageData" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Base Template</h4>
+            <img id="baseImage" src="@template.Picture" alt="Template" class="img-fluid border" style="max-width:100%;" />
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Enter Email</label>
+                <input type="text" class="form-control" name="email"  rows="3" />
+            </div>
+            <div class="form-group">
+                <label>Enter Message</label>
+                <textarea class="form-control" name="message" id="msgInput" rows="3" oninput="updatePreview()"></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Upload Image</label>
+                <input type="file" name="userImage" class="form-control" accept="image/*" onchange="previewImage(this)" />
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4">Save and Continue</button>
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<h4>Live Preview</h4>
+<div style="position: relative; display: inline-block;">
+    <img id="templateImage" src="@template.Picture" class="img-fluid" style="max-width: 500px;" />
+    <p id="liveMsg" style="position: absolute; top: 30%; left: 10%; color: red; font-size: 20px;"></p>
+    <img id="imgPreview" style="position: absolute; top: 50%; left: 20%; max-width: 150px; display: none;" />
+</div>
+
+<canvas id="finalCanvas" width="500" style="display:none;"></canvas>
+
+
+    <script>
+        function updatePreview() {
+            const msg = document.getElementById('msgInput').value;
+            document.getElementById('liveMsg').textContent = msg;
+        }
+
+        function previewImage(input) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const img = document.getElementById('imgPreview');
+                img.src = e.target.result;
+                img.style.display = 'block';
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+
+        function generateFinalImage() {
+            const canvas = document.getElementById('finalCanvas');
+            const ctx = canvas.getContext('2d');
+            const baseImage = document.getElementById('templateImage');
+            const previewImg = document.getElementById('imgPreview');
+            const message = document.getElementById('msgInput').value;
+
+            canvas.width = baseImage.width;
+            canvas.height = baseImage.height;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+
+            if (previewImg.style.display !== 'none') {
+                ctx.drawImage(previewImg, canvas.width * 0.2, canvas.height * 0.5, 150, 150);
+            }
+
+            ctx.font = "20px Arial";
+            ctx.fillStyle = "red";
+            ctx.fillText(message, canvas.width * 0.1, canvas.height * 0.3);
+
+            document.getElementById('finalImageData').value = canvas.toDataURL('image/png');
+
+            return true;
+        }
+    </script>
+

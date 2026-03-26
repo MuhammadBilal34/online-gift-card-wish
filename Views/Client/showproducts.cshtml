@@ -1,0 +1,85 @@
+﻿@model IEnumerable<mytheme.Models.Product>
+
+@{
+  
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <br> *@
+    <div class="row">
+
+
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-4" style="height:200px;margin-top:50px">
+                <input type="hidden" value="@item.Id" />
+                <p><strong>@item.Namee</strong></p><br>
+                <img src="@Url.Content(item.Picture)" alt="Random Name" width="255" height="255">
+
+                <p>@item.Price</p>
+
+                <p>@item.Descp</p>
+                @if (User.Identity.Name != null)
+                {
+                    <a asp-action="Create" asp-controller="Client" asp-route-id="@item.Id"> Customize</a>
+                    
+                   
+                     @*    <a  class="btn btn-danger">buy now</a> *@
+                    
+                }
+
+                else
+                {
+                    <input type="button" value="Read MORE" class="btn btn-default" />
+
+                }
+            </div>
+
+        }
+
+
+
+
+
+
+    </div>
+
+@* </body>
+</html> *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

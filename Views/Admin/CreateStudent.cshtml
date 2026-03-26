@@ -1,0 +1,41 @@
+﻿@model mytheme.Models.Studatum
+
+@{
+    ViewData["Title"] = "CreateStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CreateStudent</h1>
+
+<h4>Studatum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateStudent">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Stuname" class="control-label"></label>
+                <input asp-for="Stuname" class="form-control" />
+                <span asp-validation-for="Stuname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fee" class="control-label"></label>
+                <input asp-for="Fee" class="form-control" />
+                <span asp-validation-for="Fee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Addresss" class="control-label"></label>
+                <input asp-for="Addresss" class="form-control" />
+                <span asp-validation-for="Addresss" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<mytheme.Models.PurchasesViewModel>
+
+@{
+    ViewData["Title"] = "uploads";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>uploads</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalImagePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    <img src="@Url.Content(item.ImageLink)" alt="Random Name" width="255" height="255">
+            
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+               
+                    <img src="@Url.Content(item.FinalImagePath)" alt="Random Name" width="255" height="255">
+               
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

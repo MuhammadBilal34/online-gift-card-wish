@@ -1,0 +1,137 @@
+﻿@model mytheme.Models.Login
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = null; // Layout disable kar diya — sirf login page dikhai de
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Work Sans', sans-serif;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+            .login-container h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #1d3557;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #16324f;
+            }
+
+        .text-danger {
+            color: #e63946;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .extra-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+            .extra-links a {
+                color: #1d3557;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .extra-links a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Passwordd"></label>
+                <input asp-for="Passwordd" type="password" />
+                <span asp-validation-for="Passwordd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Login" />
+            </div>
+
+            <div class="extra-links">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

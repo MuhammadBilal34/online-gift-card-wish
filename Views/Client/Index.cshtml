@@ -1,0 +1,33 @@
+﻿@model IEnumerable<mytheme.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Our Products</h2>
+                <p>Browse through our exclusive collection</p>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-sm-6 mb-5 d-flex align-items-stretch ftco-animate">
+                    <div class="card shadow-sm" style="width: 100%; border: none; border-radius: 15px;">
+                        <img src="@Url.Content(item.Picture)" class="card-img-top" alt="@item.Namee" style="height: 240px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title" style="font-weight: bold;">@item.Namee</h5>
+                            <p class="card-text text-muted">@item.Descp</p>
+                            <p class="card-text" style="color: #1d3557; font-weight: 600; font-size: 18px;">Rs. @item.Price</p>
+                            <a href="#" class="btn btn-primary mt-2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
